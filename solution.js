@@ -35,7 +35,7 @@ function almostIncreasingSequence(s) {
   let inSequence = false;
   let shifted = 0;
 
-  for (let i = 0; i < s.length - 1; i++) {
+  for (let i = 0; (i < s.length - 1) && (shifted < 2); i++) {
     if (s[i] >= s[i + 1]) {
       console.log(`Shifting ${s[i]} <-> ${s[i + 1]}]`);
       const tmp = s[i];
