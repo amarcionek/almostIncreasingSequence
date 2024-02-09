@@ -15,6 +15,8 @@ m.set(5, new TestCase(false, [10, 1, 5, 4]));
 m.set(6, new TestCase(true, [100, -5, 1, 4]));
 m.set(7, new TestCase(false, [100, -5, 1, 5, 4]));
 m.set(8, new TestCase(false, [2, 2, 3, 4, 5, 5]));
+m.set(9, new TestCase(true, [-100, -5, 1, 4]));
+m.set(10, new TestCase(true, [-100, -5, 1, 5, 4]));
 
 for (const [k, v] of m.entries()) {
   console.log(`\nTesting ${k} [${v.s.join(", ")}]`);
